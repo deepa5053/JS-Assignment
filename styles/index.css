@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    width: 1440px;
+    height: 900px;
+    top: -450px;
+    left: -721px;
+    background: rgba(12, 22, 77, 1);
+  }
+  
+  .solar-system {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header {
+    text-align: left;
+    
+  }
+  
+  h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  #solaris {
+    margin: 0;
+    font-size: 18px;
+    font-style: italic;
+    color: #FFD029;
+
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .sun {
+    width: 118px;
+    height: 740.12px;
+    top: 79.94px;
+    background-color: rgba(255, 208, 41, 1);
+    border-radius: 50%;
+    
+  }
+  
+  .planet {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .mercury {
+    background-color: #848484;
+  }
+  
+  .venus {
+    background-color: #f9c985;
+  }
+  
+  .earth {
+    background-color: #3cb0fd;
+  }
+  
+  .mars {
+    background-color: #ff6347;
+  }
+  
+  .jupiter {
+    position: relative;
+    background-color: #deb887;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+  
+  .jupiter::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 1px;
+    background-color: #e6e6e6; /* Ring color */
+    border-radius: 70%;
+    transform: translate(-50%, -50%);
+  }
+  .saturn {
+    background-color: #e6be8a;
+  }
+  
+  .uranus {
+    background-color: #98f5ff;
+  }
+  
+  .neptune {
+    background-color: #4a90e2;
+  }
+  
+  
+
+  #planet-info {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: #fff;
+    border-radius: 5px;
+    display: none;
+    background-color: linear-gradient(90deg, #0C164D 0%, #190B22 100%);
+    ;
+  }
+  
+  #planet-name {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  #planet-description {
+    font-size: 18px;
+    line-height: 1.5;
+    
+  }
+  
