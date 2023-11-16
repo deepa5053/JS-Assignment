@@ -28,6 +28,8 @@ async function getPlanetDescription(planetName) {
               document.getElementById('desc').innerHTML = bodies[i].desc;
               document.getElementById('distance').innerHTML = bodies[i].distance;
               document.getElementById('rotation').innerHTML = bodies[i].rotation;
+          }else{
+            console.log("Planet not found");
           }
 
       }
