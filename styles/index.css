@@ -5,12 +5,22 @@
 body{
     width: 100vw;
     height: 100vh;
-    background-color: black;
+    
 }
+.planet-details{
+  width: 250px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
 .main{
   width: 1440px;
   height: 900px;
   background: rgba(12, 22, 77, 1);
+  display: grid;
+  flex-direction: column;
 }
  .header{
   width: 625px;
@@ -19,12 +29,16 @@ body{
   
  }
   .solar-system {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  justify-content: center;
+  align-items: center;
+
+    
+    
   }
-  #mainheading {
+  #mainheading, #name{
     color: white;
     letter-spacing: 0.6rem;
     line-height: 60px;
@@ -33,7 +47,7 @@ body{
     padding-right: 48px;
   }
   
-  #maintext {
+  #maintext, #latinName {
     color: #FFD029;
     letter-spacing: 0.6rem;
     line-height: 24px;
@@ -52,7 +66,7 @@ body{
     top: 79.94px;
     background-color: rgba(255, 208, 41, 1);
     border-radius: 50%;
-    margin-left: -80%;
+    margin-left: -50%;
   }
   
   .planet {
@@ -66,34 +80,34 @@ body{
     width: 14px;
     height: 14px;
     background: rgba(136, 136, 136, 1);
-
+    border-radius: 50%;
   }
   
   .venus {
     width: 26px;
     height: 26px;
     background: rgba(231, 205, 205, 1);
-
+    border-radius: 50%;
   }
   
   .earth {
     width: 28px;
     height: 28px;
     background: rgba(66, 142, 212, 1);
-
+    border-radius: 50%;
   }
   .saturn {
     width: 14px;
     height: 14px;
     background: rgba(239, 95, 95, 1);
-
+    border-radius: 50%;
   }
   
   .mars {
     width: 188px;
     height: 188px;
     background: rgba(226, 148, 104, 1);
-
+    border-radius: 50%;
 
   }
   
@@ -120,18 +134,21 @@ body{
   }
   .saturn {
     background-color: #e6be8a;
+    border-radius: 50%;
   }
   
   .uranus {
     width: 66px;
     height: 66px;
     background-color: #98f5ff;
+    border-radius: 50%;
   }
   
   .neptune {
     width: 66px;
     height: 66px;
     background-color: #4a90e2;
+    border-radius: 50%;
   }
   
   .footer{
@@ -145,27 +162,7 @@ body{
   justify-content: center;
   align-items: flex-end;
 }
-  #planet-info {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    color: #fff;
-    border-radius: 5px;
-    display: none;
-    background-color: linear-gradient(90deg, #0C164D 0%, #190B22 100%);
-    ;
-  }
   
-  #planet-name {
-    font-size: 36px;
-    margin-bottom: 10px;
-  }
   
-  #planet-description {
-    font-size: 18px;
-    line-height: 1.5;
-    
-  }
+  
   

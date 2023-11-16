@@ -1,14 +1,6 @@
 
- const nodeListPlanetElem =  document.querySelectorAll(".planet");
- nodeListPlanetElem.forEach((planetElem) => {
-  planetElem.addEventListener("click", async () => {
-const newTab = openNewTab();
-displayPlanet(planet, newTab);
-  });
- });
 
-
-  async function getPlanetDescription(planetName) {
+async function getPlanetDescription(planetName) {
   // let resp = await fetch("https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/keys", {
     //   method: "POST"
   // });
@@ -17,26 +9,27 @@ displayPlanet(planet, newTab);
  headers: { "x-zocom": "solaris-JAaNDtW2DyvIHS96" },
 });
   
+  //console.log("Checking for planet ");
+  //console.log(planetName);
     let temp = await resp.json();
+    
     let bodies= temp.bodies;
-    console.log(bodies);
+    console.log(temp);
 
     // Loop
     for (let i=0; i<9; i++)
-    {
+  
+     {
        if (bodies[i].name==planetName)
-       console.log(bodies[i].latinName);
-    }
-  }
-function openNewTab (){
-  newWindow = openNewwindow ("http://127.0.0.1:5500/planet-details.html");
-  return newWindow;
-}
+          {
+              console.log("Found the planet name");
+              document.getElementById('name').innerHTML = bodies[i].name;
+              document.getElementById('latinName').innerHTML = bodies[i].latinName;
+              document.getElementById('desc').innerHTML = bodies[i].desc;
+              document.getElementById('distance').innerHTML = bodies[i].distance;
+              document.getElementById('rotation').innerHTML = bodies[i].rotation;
+          }
 
-  function displayPlanet(planet,newTab) {
-    newTab.document.write(
-      "<h1>" +planet[0].name+"</h1>",
-      "<h1>" +planet[0].desc+"</h1>"
-      
-    )
+      }
   }
+  //getPlanetDescription('Solen');

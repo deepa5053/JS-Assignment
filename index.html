@@ -14,38 +14,43 @@
   <h3 id="maintext">SOLARIS</h3>
 </header>
       <div class="solar-system">
-        <a href="planet-details.html?planet=Sun">
+        <div onclick="getPlanetDescription('Solen')">
           <div class="sun"></div>
-        </a>
-        <a href="planet-details.html?planet=Mercury">
+        </div>
+        <div onclick="getPlanetDescription('Merkurius')">
           <div class="planet mercury"></div>
-        </a>
-        <a href="planet-details.html?planet=Venus">
-          <div class="planet venus"></div>
-        </a>
-        <a href="planet-details.html?planet=Earth">
-          <div class="planet earth"></div>
-        </a>
-        <a href="planet-details.html?planet=Saturn">
-            <div class="planet saturn"></div>
-        <a href="planet-details.html?planet=Mars">
-          <div class="planet mars"></div>
-        </a>
-        <a href="planet-details.html?planet=Jupiter">
-          <div class="planet jupiter"></div>
-        </a>
-        
-        </a>
-        <a href="planet-details.html?planet=Uranus">
-          <div class="planet uranus"></div>
-        </a>
-        <a href="planet-details.html?planet=Neptune">
-          <div class="planet neptune"></div>
-        </a>
+     
+        <div onclick="getPlanetDescription('Venus')">
+          <div class="venus"></div>
+        </div>
+        <div onclick="getPlanetDescription('Jorden')" >
+          <div class="earth"></div>
+        </div>
+        <div  onclick="getPlanetDescription('Mars')">
+            <div class="saturn"></div>
+        <div onclick="getPlanetDescription('Saturnus')">
+          <div class="mars"></div>
+        </div>
+        <div onclick="getPlanetDescription('Jupiter')" >
+          <div class="jupiter"></div>
+        </div>
+        <div onclick="getPlanetDescription('Uranus')">
+          <div class="uranus"></div>
+        </div>
+        <div onclick="getPlanetDescription('Neptunus')">
+          <div class="neptune"></div>
+        </div>
       </div>
+       <div class="planet-details">
+      <h2 id="name"></h2>
+      <h2 id="latinName"></h2>
+      <p id="desc"></p>
+      <p id="distance"></p>
+      <p id="rotation"></p>
+      <p id="temp"></p>
+    </div>
       <div class="footer"><p class="logo"> ZoCom</p></div>
     </section>
-
 <script src="js/index.js"></script>
 
 </body>
