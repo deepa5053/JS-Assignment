@@ -1,49 +1,58 @@
-body {
-    margin: 0;
-    overflow: hidden;
-    width: 1440px;
-    height: 900px;
-    top: -450px;
-    left: -721px;
-    background: rgba(12, 22, 77, 1);
-  }
-  
-  .solar-system {
-    position: relative;
+* {
+  box-sizing: border-box;
+}
+
+body{
     width: 100vw;
     height: 100vh;
+    background-color: black;
+}
+.main{
+  width: 1440px;
+  height: 900px;
+  background: rgba(12, 22, 77, 1);
+}
+ .header{
+  width: 625px;
+  height: 121px;
+  margin-left: 800px;
+  
+ }
+  .solar-system {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    
   }
-  header {
-    text-align: right;
-    
-  }
-  
-  h1 {
-    color: #fff;
-    margin: 0;
-    font-size: 24px;
+  #mainheading {
+    color: white;
+    letter-spacing: 0.6rem;
+    line-height: 60px;
+    font-family: 'Secular One', sans-serif;
+    font-size: 60px;
+    padding-right: 48px;
   }
   
-  #solaris {
-    margin: 0;
-    font-size: 18px;
-    font-style: italic;
+  #maintext {
     color: #FFD029;
-
-    padding: 5px;
-    border-radius: 5px;
+    letter-spacing: 0.6rem;
+    line-height: 24px;
+    font-family: 'Lora', serif;
+    font-size: 24px;
+    padding-right: 48px;
+    margin-bottom: -80px;
   }
+  
+  
+  
+  
   .sun {
-    width: 118px;
+    width: 120px;
     height: 740.12px;
     top: 79.94px;
     background-color: rgba(255, 208, 41, 1);
     border-radius: 50%;
-    
+    margin-left: -80%;
   }
   
   .planet {
@@ -107,7 +116,7 @@ body {
     background-color: #e6e6e6; /* Ring color */
     border-radius: 70%;
     transform: translate(-50%, -50%);
-    rotate: 30°;
+    rotate: -30°;
   }
   .saturn {
     background-color: #e6be8a;
@@ -125,8 +134,17 @@ body {
     background-color: #4a90e2;
   }
   
-  
-
+  .footer{
+    width: 80px;
+    height: 20px;
+    color: white;
+    font-size: 80px;
+    display: flex;
+  }
+.logo{
+  justify-content: center;
+  align-items: flex-end;
+}
   #planet-info {
     position: fixed;
     top: 50%;

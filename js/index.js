@@ -1,17 +1,12 @@
 
- document.addEventListener('DOMContentLoaded', function() {
-
-    const urlParams = new URLSearchParams(window.location.search);
-    const planetName = urlParams.get('planet');
-  
-
-    document.getElementById('planet-name').innerText = planetName;
-  
-
-    document.getElementById('planet-description').innerText = getPlanetDescription(planetName);
+ const nodeListPlanetElem =  document.querySelectorAll(".planet");
+ nodeListPlanetElem.forEach((planetElem) => {
+  planetElem.addEventListener("click", async () => {
+const newTab = openNewTab();
+displayPlanet(planet, newTab);
   });
-  
-  
+ });
+
 
   async function getPlanetDescription(planetName) {
   // let resp = await fetch("https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/keys", {
@@ -33,13 +28,15 @@
        console.log(bodies[i].latinName);
     }
   }
+function openNewTab (){
+  newWindow = openNewwindow ("http://127.0.0.1:5500/planet-details.html");
+  return newWindow;
+}
 
-
-  const planets = document.querySelectorAll('.planet');
-
-  planets.forEach(planet => {
-    planet.addEventListener('click', function() {
-      const planetName = this.classList[1]; // Assumes the second class is the planet name
-      window.location.href = `planet-details.html?planet=${planetName}`;
-    });
-  });
+  function displayPlanet(planet,newTab) {
+    newTab.document.write(
+      "<h1>" +planet[0].name+"</h1>",
+      "<h1>" +planet[0].desc+"</h1>"
+      
+    )
+  }
