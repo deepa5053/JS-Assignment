@@ -1,59 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/index.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/index.css">
+  <title>Document</title>
 </head>
+
 <body>
   <section class="main">
-  <header class="header">
-  <h1 id="mainheading">SOLSYSTEMET</h1>
-  <h3 id="maintext">SOLARIS</h3>
-</header>
-      <div class="solar-system">
-        <div onclick="getPlanetDescription('Solen')">
-          <div class="sun"></div>
-        </div>
-        <div onclick="getPlanetDescription('Merkurius')">
-          <div class="mercury"></div>
-        </div>
-        <div onclick="getPlanetDescription('Venus')">
-          <div class="venus"></div>
-        </div>
-        <div onclick="getPlanetDescription('Jorden')" >
-          <div class="earth"></div>
-        </div>
-        <div  onclick="getPlanetDescription('Mars')">
-            <div class="saturn"></div>
-        </div>
-        <div onclick="getPlanetDescription('Saturnus')">
-          <div class="mars"></div>
-        </div>
-        <div onclick="getPlanetDescription('Jupiter')" >
-          <div class="jupiter"></div>
-        </div>
-        <div onclick="getPlanetDescription('Uranus')">
-          <div class="uranus"></div>
-        </div>
-        <div onclick="getPlanetDescription('Neptunus')">
-          <div class="neptune"></div>
-        </div>
+    <header class="header">
+      <h1 id="mainheading">SOLSYSTEMET</h1>
+      <h3 id="maintext">SOLARIS</h3>
+    </header>
+    <div class="solar-system">
+      <div onclick="getPlanetDescription('Solen')">
+        <div class="sun"></div>
       </div>
-       <div class="planet-details">
-      <h2 id="name"></h2>
-      <h2 id="latinName"></h2>
-      <p id="desc"></p>
-      <hr>
-      <p id="distance"></p>
-      <p id="rotation"></p>
-      <p id="temp"></p>
+      <div onclick="getPlanetDescription('Merkurius')">
+        <div class="mercury"></div>
+      </div>
+      <div onclick="getPlanetDescription('Venus')">
+        <div class="venus"></div>
+      </div>
+      <div onclick="getPlanetDescription('Jorden')">
+        <div class="earth"></div>
+      </div>
+      <div onclick="getPlanetDescription('Mars')">
+        <div class="saturn"></div>
+      </div>
+      <div onclick="getPlanetDescription('Saturnus')">
+        <div class="mars"></div>
+      </div>
+      <div onclick="getPlanetDescription('Jupiter')">
+        <div class="jupiter"></div>
+      </div>
+      <div onclick="getPlanetDescription('Uranus')">
+        <div class="uranus"></div>
+      </div>
+      <div onclick="getPlanetDescription('Neptunus')">
+        <div class="neptune"></div>
+      </div>
     </div>
-      <div class="footer"><p class="logo"> ZoCom</p></div>
-    </section>
-<script src="js/index.js"></script>
+      <div class="footer">
+        <p class="logo"> ZoCom</p></div>
+    </div></div>
+    <div class="planet-details">
+      <div class="planet-info">
+        <h2 id="name"></h2>
+        <h2 id="latinName"></h2>
+        <p id="desc"></p>
+        <hr>
+        <div class="more-details">
+         
+          <div>
+        <h2 id="circum-title"></h2>
+        <p id="circum"></p>
+        <h2 id="circum-title"></h2>
+        <h2 id="dist-title"></h2>
+        <p id="distance"></p>
+          </div>
+          <div>
+        <h2 id="max-temp-title"></h2>
+        <p id="max-temp"></p>
+        <h2 id="min-temp-title"></h2>
+        <p id="min-temp"></p>
+      </div></div></div>
+  </section>
+  <script src="js/index.js"></script>
 
 </body>
+
 </html>

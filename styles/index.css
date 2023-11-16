@@ -13,10 +13,23 @@ body{
   color: white;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-top: 30px;
   background: rgba(12, 22, 77, 1);
 }
-
+.planet-info{
+width:800px ;
+}
+#desc{
+  width: 800px;
+  margin-top: 150px;
+}
+.more-details{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 .main{
   width: 1440px;
   height: 900px;
@@ -147,17 +160,9 @@ flex-direction: row;
   }
   
   .footer{
-    width: 80px;
-    height: 20px;
     color: white;
     font-size: 80px;
-    display: flex;
   }
-.logo{
-  justify-content: center;
-  align-items: flex-end;
-}
-  
   
   
   
